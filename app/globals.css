@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ color-scheme: dark; }
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-track{ animation: ticker 26s linear infinite; }
+.glow{ filter: blur(60px); opacity: .55; }
+.gridlines{
+  background-image: linear-gradient(rgba(148,163,184,.08) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(148,163,184,.08) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
